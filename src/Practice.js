@@ -23,6 +23,11 @@ Thermostat.prototype.increaseTemperature = function(changeTempBy) {
      this.temperature = 25
      return ("Too Hot")
    }
+   else if (this.powerSavingMode === false && this.temperature > 32)
+   {
+    this.temperature = 32
+    return ("Too Hot")
+   }
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
