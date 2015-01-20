@@ -3,8 +3,26 @@ var Thermostat = function() {
   this.powerSavingMode = true;
 };
 
+Thermostat.prototype.powerSavingModeSwitch = function(onOrOff) {
+  if (onOrOff === "off") 
+  {
+    this.powerSavingMode = false
+  }
+  else if (onOrOff === "on")
+  {
+    this.powerSavingMode = true
+  }
+};
+
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
-  return this.temperature += changeTempBy;
+
+   this.temperature += changeTempBy;
+
+   if (this.powerSavingMode === true && this.temperature > 25)
+   {
+     this.temperature = 25
+     return ("Too Hot")
+   }
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
@@ -19,16 +37,5 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
   else
   {
     return this.temperature
-  }
-};
-
-Thermostat.prototype.powerSavingModeSwitch = function(onOrOff) {
-  if (onOrOff === "off") 
-  {
-    this.powerSavingMode = false
-  }
-  else if (onOrOff === "on")
-  {
-    this.powerSavingMode = true
   }
 };
