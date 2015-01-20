@@ -27,6 +27,20 @@ describe("Thermostat", function() {
 
     it("has a minimum temperature of 10 degrees", function() {
       expect(thermostat.decreaseTemperature(11)).toBe("Too Cold");
+      expect(thermostat.temperature).toEqual(10);
+    });
+
+  });
+
+  describe("power-saving mode", function() {
+
+    it("is switched on by default", function() {
+      expect(thermostat.powerSavingMode).toBe(true);
+    });
+
+    it("can be switched off", function() {
+      thermostat.powerSavingModeSwitch("off");
+      expect(thermostat.powerSavingMode).toBe(false);
     });
 
   });
