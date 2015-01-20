@@ -1,8 +1,6 @@
-"use strict"
-
-
 var Thermostat = function() {
   this.temperature = 20;
+  this.powerSavingMode = true;
 };
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
@@ -15,10 +13,22 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 
    if (this.temperature < 10)
   {
-    return ("Too Cold")
-  } 
+    this.temperature = 10
+    return "Too Cold"
+  }
   else
   {
     return this.temperature
-  }  
+  }
+};
+
+Thermostat.prototype.powerSavingModeSwitch = function(onOrOff) {
+  if (onOrOff === "off") 
+  {
+    this.powerSavingMode = false
+  }
+  else if (onOrOff === "on")
+  {
+    this.powerSavingMode = true
+  }
 };
