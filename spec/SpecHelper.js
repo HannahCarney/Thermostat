@@ -25,6 +25,10 @@ describe("Thermostat", function() {
       expect(thermostat.temperature).toEqual(19);
     });
 
+    it("has a minimum temperature of 10 degrees", function() {
+      expect(thermostat.decreaseTemperature(11)).toBe("Too Cold");
+    });
+
   });
 
 });

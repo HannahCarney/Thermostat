@@ -10,5 +10,15 @@ Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
-  return this.temperature -= changeTempBy;
+ 
+   this.temperature -= changeTempBy;
+
+   if (this.temperature < 10)
+  {
+    return ("Too Cold")
+  } 
+  else
+  {
+    return this.temperature
+  }  
 };
