@@ -43,6 +43,11 @@ describe("Thermostat", function() {
       expect(thermostat.powerSavingMode).toBe(false);
     });
 
+    it("has a maximum temperature of 25 degrees", function() {
+      expect(thermostat.increaseTemperature(6)).toBe("Too Hot");
+      expect(thermostat.temperature).toEqual(25);
+    });
+
   });
 
 });
