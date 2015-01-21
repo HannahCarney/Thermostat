@@ -30,6 +30,12 @@ describe("Thermostat", function() {
       expect(thermostat.temperature).toEqual(10);
     });
 
+    it("it can be reset", function(){
+      thermostat.increaseTemperature(2)
+      thermostat.reset();
+      expect(thermostat.temperature).toEqual(20);
+    });
+
   });
 
   describe("power-saving mode", function() {
@@ -53,7 +59,6 @@ describe("Thermostat", function() {
       expect(thermostat.increaseTemperature(13)).toBe("Too Hot");
       expect(thermostat.temperature).toEqual(32);
     });
-
 
 
   });
