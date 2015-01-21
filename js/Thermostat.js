@@ -68,6 +68,7 @@ Thermostat.prototype.tooCold = function() {
 Thermostat.prototype.reset = function() {
 
   this.temperature = 20;
+  this.energyColor = "medium-usage";
 
 };
 
