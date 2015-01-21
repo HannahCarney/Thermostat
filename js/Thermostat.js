@@ -8,10 +8,12 @@ Thermostat.prototype.powerSavingModeSwitch = function(onOrOff) {
   if (onOrOff === "off") 
   {
     this.powerSavingMode = false
+    this.tooHot();
   }
   else if (onOrOff === "on")
   {
     this.powerSavingMode = true
+    this.tooHot();
   }
 };
 
