@@ -18,36 +18,49 @@ Thermostat.prototype.powerSavingModeSwitch = function(onOrOff) {
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 
    this.temperature += changeTempBy;
+   return this.tooHot();
+};
 
-   if (this.powerSavingMode === true && this.temperature > 25)
+Thermostat.prototype.tooHot = function() {
+
+    if (this.powerSavingMode === true && this.temperature > 25)
    {
-     this.temperature = 25
-     return ("Too Hot")
+      this.temperature = 25
+      this.setColor()
+      return ("Too Hot")
    }
    else if (this.powerSavingMode === false && this.temperature > 32)
    {
-    this.temperature = 32
-    return ("Too Hot")
+      this.temperature = 32
+      this.setColor()
+      return ("Too Hot")
    }
-
-   this.setColor();
+   else
+   { 
+      this.setColor()
+   }
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
  
    this.temperature -= changeTempBy;
+   return this.tooCold();
+};
 
-   if (this.temperature < 10)
+Thermostat.prototype.tooCold = function() {
+
+     if (this.temperature < 10)
    {
-    this.temperature = 10
-    return "Too Cold"
+      this.temperature = 10
+      this.setColor()
+      return "Too Cold"
   }
-  else
+    else
   {
-    return this.temperature
+      this.setColor()
+      return this.temperature
   }
 
-  this.setColor();
 };
 
 Thermostat.prototype.reset = function() {
@@ -62,13 +75,17 @@ Thermostat.prototype.setColor = function() {
   {
     this.energyColor = "green";
   }
-  else if (this.temperature < 25)
-  {
-    this.energyColor = "yellow";
-  }
   else if (this.temperature > 25)
   {
     this.energyColor = "red";
   }
+  else 
+  {
+    this.energyColor = "yellow";
+  }
 
 };
+
+
+
+
