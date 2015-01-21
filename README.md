@@ -21,6 +21,8 @@ Technologies used
 - Javascript
 - jQuery
 - Jasmine
+- Sinatra
+- Ruby
 - Git
 - SublimeText
 
