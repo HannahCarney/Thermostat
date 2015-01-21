@@ -1,5 +1,5 @@
-Termostat Practice Challenge
-----------------------------
+Thermostat Week 5 JavaScript Project
+-----------------------------------
 Because Makers Academy is cold!
 
 Requirements are as follows:
