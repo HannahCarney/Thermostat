@@ -2,6 +2,10 @@
 	text-align: center;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 h1 {
 	font-size: 6em;
 }
@@ -9,15 +13,42 @@ h1 {
 button {
 	font-size: 2em;
 	margin: .5em .5em;
+  background-color: #3498db;
+  border-radius: 4px;
+  border-width: 0;
+  color: white;
+}
+
+button:hover {
+  background-color: #2980b9;
 }
 
 .grid {
 	border: solid;
 	border-width: .5em;
 	width: 20%;
-    margin: 0 auto;
+  margin: 0 auto;
+  padding-bottom: 4em;
 }
 
 label {
-	font-size: 2em;
+	font-size: 1.8em;
+}
+
+.display {
+  background-color: #bdc3c7;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.low-usage {
+  color: #27ae60;
+}
+
+.medium-usage {
+  color: #f1c40f;
+}
+
+.high-usage {
+  color: #c0392b;
 }
