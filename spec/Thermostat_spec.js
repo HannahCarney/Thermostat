@@ -75,7 +75,8 @@ describe("Thermostat", function() {
       expect(thermostat.energyColor).toBe("yellow");
     });
 
-    it("red when temperature is greater than 25", function() {
+    it("red when power mode is off and temperature is greater than 25", function() {
+      thermostat.powerSavingModeSwitch("off");
       thermostat.increaseTemperature(6);
       expect(thermostat.energyColor).toBe("red");
     });
