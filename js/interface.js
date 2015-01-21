@@ -1,8 +1,18 @@
 var thermostat = new Thermostat();
 
+var updateColor = function() {
+  $('.energyColor').addClass(thermostat.energyColor);
+};
+
+var removeColor = function() {
+  $('.energyColor').removeClass(thermostat.energyColor);
+};
 
 var updateTemperature = function() {
+  
   $('#temperature').text(thermostat.temperature);
+  updateColor();
+  removeColor();
 };
 
 $(document).ready(function() {

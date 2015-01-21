@@ -1,7 +1,7 @@
 var Thermostat = function() {
   this.temperature = 20;
   this.powerSavingMode = true;
-  this.energyColor = "yellow";
+  this.energyColor = "medium-usage";
 };
 
 Thermostat.prototype.powerSavingModeSwitch = function(onOrOff) {
@@ -75,15 +75,15 @@ Thermostat.prototype.setColor = function() {
 
   if (this.temperature < 18) 
   {
-    this.energyColor = "green";
+    this.energyColor = "low-usage";
   }
   else if (this.temperature > 25)
   {
-    this.energyColor = "red";
+    this.energyColor = "high-usage";
   }
   else 
   {
-    this.energyColor = "yellow";
+    this.energyColor = "medium-usage";
   }
 
 };
