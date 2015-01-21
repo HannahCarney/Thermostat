@@ -24,7 +24,7 @@ Technologies used
 - Sinatra
 - Ruby
 - Html
-- Css
+- CSS
 - Git
 - SublimeText
 
