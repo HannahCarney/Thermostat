@@ -3,7 +3,7 @@
   <head>
     <title>Thermostat</title>
     <meta charset='utf8'>
-    <link rel="stylesheet" href="css/thermo-style.css">
+    <link rel="stylesheet" href="thermo-style.css">
   </head>
 
   <body>
@@ -22,7 +22,38 @@
       <button class="PSM-off">OFF</button>
     </main>
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-    <script src="js/Thermostat.js"></script>
-    <script src="js/interface.js"></script>
+    <script src="Thermostat.js"></script>
+    <script src="interface.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+      updateTemperature();
+
+      $('.increaseTemp').on('click', function() {
+        thermostat.increaseTemperature(1);
+        updateTemperature();
+      });
+      
+      $('.decreaseTemp').on('click', function() {
+        thermostat.decreaseTemperature(1);
+        updateTemperature();
+      });
+
+      $('.reset').on('click', function() {
+        thermostat.reset();
+        updateTemperature();
+      });
+
+      $('.PSM-on').on('click', function() {
+        thermostat.powerSavingModeSwitch("on");
+        updateTemperature();
+      });
+
+      $('.PSM-off').on('click', function() {
+        thermostat.powerSavingModeSwitch("off");
+        updateTemperature();
+      });
+
+    });
+      </script>
   </body>
 </html>

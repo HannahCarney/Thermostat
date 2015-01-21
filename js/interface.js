@@ -1,3 +1,5 @@
+
+
 var thermostat = new Thermostat();
 
 var updateColor = function() {
