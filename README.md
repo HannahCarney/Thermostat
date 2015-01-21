@@ -6,8 +6,8 @@ The heating at Makers Academy is broken and in rebellion we have programmed a th
 
 Heroku (live)
 -----
-[heroku]: https://thermostat-js.herokuapp.com/
-[heroku]
+[Thermostat]: https://thermostat-js.herokuapp.com/
+[Thermostat]
 
 Objectives of exercise
 ----
