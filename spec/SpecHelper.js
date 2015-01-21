@@ -63,4 +63,23 @@ describe("Thermostat", function() {
 
   });
 
+  describe("energy usage shows", function() {
+
+    it("green when temperature is less than 18", function() {
+      thermostat.decreaseTemperature(3);
+      expect(thermostat.energyColor).toBe("green");
+    }); 
+
+    it("yellow when temperature is between 18 and 25", function() {
+      thermostat.increaseTemperature(1);
+      expect(thermostat.energyColor).toBe("yellow");
+    });
+
+    it("red when temperature is greater than 25", function() {
+      thermostat.increaseTemperature(6);
+      expect(thermostat.energyColor).toBe("red");
+    });
+
+  });
+
 });
