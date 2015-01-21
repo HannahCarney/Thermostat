@@ -23,6 +23,8 @@ Technologies used
 - Jasmine
 - Sinatra
 - Ruby
+- Html
+- Css
 - Git
 - SublimeText
 
