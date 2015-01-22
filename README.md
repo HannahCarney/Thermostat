@@ -4,6 +4,11 @@ Week 5 JavaScript Project
 -------------------------
 The heating at Makers Academy is broken and in rebellion we have programmed a thermostat.
 
+Heroku (live)
+-----
+[Thermostat]: https://thermostat-js.herokuapp.com/
+[Thermostat]
+
 Objectives of exercise
 ----
 - Getting warm!
@@ -16,6 +21,10 @@ Technologies used
 - Javascript
 - jQuery
 - Jasmine
+- Sinatra
+- Ruby
+- Html
+- CSS
 - Git
 - SublimeText
 
