@@ -1,0 +1,41 @@
+@import url('normalize.css');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: helvetica-bold;
+}
+
+.left-col {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+.right-col {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background-color: black;
+}
+
+.rotated-text {
+  margin-left: -1em;
+  height: 100%;
+}
+
+#temperature {
+  font-size: 12em;
+}
+
+.display {
+  text-align: right;
+}

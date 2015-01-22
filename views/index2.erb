@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat2</title>
+    <link rel="stylesheet" href="thermo-style-2.css">
+  </head>
+  <body>
+
+      <section class="left-col">
+        <section class="display">
+          <span id="temperature">??</span>
+        </section>
+      </section>
+      <section class="right-col">
+        <img src="degrees.svg" class="rotated-text">
+      </section>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="Thermostat.js"></script>
+    <script src="interface.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function() {
+      updateTemperature();
+
+      $('.increaseTemp').on('click', function() {
+        thermostat.increaseTemperature(1);
+        updateTemperature();
+      });
+      
+      $('.decreaseTemp').on('click', function() {
+        thermostat.decreaseTemperature(1);
+        updateTemperature();
+      });
+
+      $('.reset').on('click', function() {
+        thermostat.reset();
+        updateTemperature();
+      });
+
+      $('.PSM-on').on('click', function() {
+        thermostat.powerSavingModeSwitch("on");
+        updateTemperature();
+      });
+
+      $('.PSM-off').on('click', function() {
+        thermostat.powerSavingModeSwitch("off");
+        updateTemperature();
+      });
+
+    });
+      </script>
+  </body>
+</html>
