@@ -17,7 +17,7 @@ body {
 
 .left-col {
   width: 60%;
-  height: `00%;
+  height: 100%;
   float: left;
 }
 
@@ -37,21 +37,14 @@ body {
   font-size: 15em;
   line-height: 0;
   margin-bottom: 3em;
-  height: 100%;
 }
 
 .display {
   text-align: right;
   height: 50%;
-  margin-top: 50%;
-  margin-right: 3%;
+  margin-top: 25%;
+  margin-right: 2%;
   margin-left: -1em;
-  position: relative;
-   -webkit-transform-origin: translateY(2);
-     -moz-transform-origin: translateY(2);
-       -o-transform-origin: translateY(2);
-          transform-origin: translateY(2);
-}
 }
 
 #buttons {
@@ -85,31 +78,6 @@ button {
   padding-left: 1em;
   background-color: white;
   font-size: 2em;
-}
-
-<<<<<<< HEAD
-#energyColor.low-usage {
-  color: #27ae60;
-}
-
-#energyColor.medium-usage {
-  color: #f1c40f;
-}
-
-#energyColor.high-usage {
-  color: #c0392b;
-}
-
-#PSM-title.low-usage {
-  background-color: #27ae60;
-}
-
-#PSM-title.medium-usage {
-  background-color: #f1c40f;
-}
-
-#PSM-title.high-usage {
-  background-color: #c0392b;
 }
 
 .sml-screen-degrees {

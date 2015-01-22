@@ -8,10 +8,6 @@
   <body>
       <section class="left-col">
         <section class="display">
-            <section id="energyColor" class="high-usage medium-usage low-usage">
-            <span id="temperature">??</span>
-            </section>
-
           <span id="temperature">??</span>
           <span class="sml-screen-degrees">degrees</span>
           <section id="buttons">
@@ -19,7 +15,7 @@
             <button class="decreaseTemp">-</button>
             <button class="reset">reset</button>
           </section>
-          <section id="PSM-title" class="high-usage medium-usage low-usage">
+          <section id="PSM-title">
               <label id="powerSavingModeSwitch">
             power saving mode</label>
           </section>
@@ -39,7 +35,6 @@
       <script type="text/javascript">
       $(document).ready(function() {
       updateTemperature();
-
       $('.increaseTemp').on('click', function() {
         thermostat.increaseTemperature(1);
         updateTemperature();
@@ -49,22 +44,18 @@
         thermostat.decreaseTemperature(1);
         updateTemperature();
       });
-
       $('.reset').on('click', function() {
         thermostat.reset();
         updateTemperature();
       });
-
       $('.PSM-on').on('click', function() {
         thermostat.powerSavingModeSwitch("on");
         updateTemperature();
       });
-
       $('.PSM-off').on('click', function() {
         thermostat.powerSavingModeSwitch("off");
         updateTemperature();
       });
-
     });
       </script>
   </body>
