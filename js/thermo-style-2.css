@@ -113,3 +113,27 @@ button {
     width: 100%;
   }
 }
+
+#energyColor.low-usage {
+  color: #27ae60;
+}
+
+#energyColor.medium-usage {
+  color: #f1c40f;
+}
+
+#energyColor.high-usage {
+  color: #c0392b;
+}
+
+#PSM-title.low-usage {
+  background-color: #27ae60;
+}
+
+#PSM-title.medium-usage {
+  background-color: #f1c40f;
+}
+
+#PSM-title.high-usage {
+  background-color: #c0392b;
+}
