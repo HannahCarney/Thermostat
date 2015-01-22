@@ -67,18 +67,18 @@ describe("Thermostat", function() {
 
     it("green when temperature is less than 18", function() {
       thermostat.decreaseTemperature(3);
-      expect(thermostat.energyColor).toBe("green");
+      expect(thermostat.energyColor).toBe("low-usage");
     }); 
 
     it("yellow when temperature is between 18 and 25", function() {
       thermostat.increaseTemperature(1);
-      expect(thermostat.energyColor).toBe("yellow");
+      expect(thermostat.energyColor).toBe("medium-usage");
     });
 
     it("red when power mode is off and temperature is greater than 25", function() {
       thermostat.powerSavingModeSwitch("off");
       thermostat.increaseTemperature(6);
-      expect(thermostat.energyColor).toBe("red");
+      expect(thermostat.energyColor).toBe("high-usage");
     });
 
   });
