@@ -84,17 +84,27 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
   .left-col {
     width: 100%;
+    padding: .1em;
   }
   #temperature {
-    font-size: 10em;
+    font-size: 11em;
     text-align: center auto;
+    margin-left: .1em;
+    margin-right: auto;
+    padding: .1em;
+  
   }
   #powerSavingModeSwitch {
     font-size: 1em;
-    padding-right: 0;
+    margin-left: 1.5em;
+    text-align: center;
+  }
+
+  #PSM-buttons {
+    margin-left: 2em;
   }
   .right-col {
     display: none;
