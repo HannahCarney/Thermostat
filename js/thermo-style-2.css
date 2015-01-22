@@ -17,7 +17,7 @@ body {
 
 .left-col {
   width: 60%;
-  height: 100%;
+  height: `00%;
   float: left;
 }
 
@@ -37,14 +37,21 @@ body {
   font-size: 15em;
   line-height: 0;
   margin-bottom: 3em;
+  height: 100%;
 }
 
 .display {
   text-align: right;
   height: 50%;
-  margin-top: 25%;
+  margin-top: 50%;
   margin-right: 3%;
   margin-left: -1em;
+  position: relative;
+   -webkit-transform-origin: translateY(2);
+     -moz-transform-origin: translateY(2);
+       -o-transform-origin: translateY(2);
+          transform-origin: translateY(2);
+}
 }
 
 #buttons {
