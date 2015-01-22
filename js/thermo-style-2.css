@@ -12,7 +12,7 @@ html {
 body {
   height: 100%;
   font-family: helvetica-bold;
-  min-width: 40em;
+  min-width: 10em;
 }
 
 .left-col {
@@ -78,4 +78,38 @@ button {
   padding-left: 1em;
   background-color: white;
   font-size: 2em;
+}
+
+.sml-screen-degrees {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .left-col {
+    width: 100%;
+  }
+  .right-col {
+    display: none;
+  }
+
+  .sml-screen-degrees {
+    display: block;
+    width: 100%;
+    background-color: black;
+    padding: 0.5em;
+    color: white;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    line-height: 0.4em;
+  }
+
+  .display {
+    text-align: center;
+  }
+
+  #powerSavingModeSwitch {
+    padding-right: 1em;
+    width: 100%;
+  }
 }
