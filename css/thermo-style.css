@@ -37,6 +37,8 @@ label {
 
 .display {
   background-color: #bdc3c7;
+  border: solid;
+  border-radius: 1em;
   width: 90%;
   margin: 0 auto;
 }
