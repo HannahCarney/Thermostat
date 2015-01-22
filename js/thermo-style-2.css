@@ -43,7 +43,7 @@ body {
   text-align: right;
   height: 50%;
   margin-top: 25%;
-  margin-right: 2%;
+  margin-right: 3%;
   margin-left: -1em;
 }
 
@@ -78,4 +78,28 @@ button {
   padding-left: 1em;
   background-color: white;
   font-size: 2em;
+}
+
+#energyColor.low-usage {
+  color: #27ae60;
+}
+
+#energyColor.medium-usage {
+  color: #f1c40f;
+}
+
+#energyColor.high-usage {
+  color: #c0392b;
+}
+
+#PSM-title.low-usage {
+  background-color: #27ae60;
+}
+
+#PSM-title.medium-usage {
+  background-color: #f1c40f;
+}
+
+#PSM-title.high-usage {
+  background-color: #c0392b;
 }
