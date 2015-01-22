@@ -34,8 +34,33 @@ body {
 
 #temperature {
   font-size: 12em;
+  font-size: 15em;
 }
 
 .display {
   text-align: right;
+  height: 50%;
+  margin-top: 25%;
+  margin-right: 2%;
+  margin-left: -1em;
+}
+
+#buttons {
+  border: 0;
+
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  font-size: 2.7em;
+  padding: .1em;
+}
+
+#PSM-title {
+  font-size: 2em;
+}
+
+#PSM-buttons p {
+  font-size: .8em;
 }
