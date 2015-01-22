@@ -84,9 +84,17 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 350px) {
   .left-col {
     width: 100%;
+  }
+  #temperature {
+    font-size: 10em;
+    text-align: center auto;
+  }
+  #powerSavingModeSwitch {
+    font-size: 1em;
+    padding-right: 0;
   }
   .right-col {
     display: none;
