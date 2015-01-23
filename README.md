@@ -4,10 +4,15 @@ Week 5 JavaScript Project
 -------------------------
 The heating at Makers Academy is broken and in rebellion we have programmed a thermostat.
 
+Screen shots
+-----
+![](public/images/Screenshotcomputer.png)
+![](public/images/screenshotphone.PNG)
+
 Heroku (live)
 -----
-[Thermostat]: https://thermostat-js.herokuapp.com/
-[Thermostat]
+[Thermostat simple]: https://thermostat-js.herokuapp.com/
+[Thermostat design version]: https://thermostat-js.herkuapp.com/
 
 Objectives of exercise
 ----
