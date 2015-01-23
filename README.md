@@ -20,9 +20,9 @@ Screen shots
 Heroku (live)
 -----
 [Thermostat simple]: https://thermostat-js.herokuapp.com/
-[Thermostat design version]: https://thermostat-js.herkuapp.com/2
+[Thermostat design]: https://thermostat-js.herkuapp.com/2
 [Thermostat simple]
-[Thermostat design version]
+[Thermostat design]
 
 Objectives of exercise
 ----
