@@ -19,9 +19,9 @@ Screen shots
 
 Heroku (live)
 -----
-[Thermostat simple]: https://thermostat-js.herokuapp.com/
-[Thermostat design]: https://thermostat-js.herokuapp.com/2
+[Thermostat simple]: https://thermostat-js.herokuapp.com
 [Thermostat simple]
+[Thermostat design]: https://thermostat-js.herokuapp.com/2
 [Thermostat design]
 
 Objectives of exercise
