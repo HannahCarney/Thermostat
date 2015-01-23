@@ -11,6 +11,7 @@ html {
 
 body {
   height: 100%;
+  width: 100%;
   font-family: helvetica-bold;
   min-width: 10em;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 .rotated-text {
-  margin-left: -1em;
+  margin-left: 0em;
   height: 100%;
 }
 
@@ -61,8 +62,8 @@ button {
 }
 
 #PSM-title {
-  background-color: red;
-  line-height: 0.9em;
+  line-height: 1em;
+  width: 100%;
 }
 
 #PSM-buttons p {
@@ -84,10 +85,11 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .left-col {
     width: 100%;
     padding: .1em;
+    text-align: center;
   }
   #temperature {
     font-size: 11em;
@@ -101,6 +103,7 @@ button {
     font-size: 1em;
     margin-left: 1.5em;
     text-align: center;
+    width: 100%;
   }
 
   #PSM-buttons {
@@ -124,6 +127,7 @@ button {
 
   .display {
     text-align: center;
+    width: 100%;
   }
 
   #powerSavingModeSwitch {
