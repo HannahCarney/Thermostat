@@ -20,7 +20,7 @@ Screen shots
 Heroku (live)
 -----
 [Thermostat simple]: https://thermostat-js.herokuapp.com/
-[Thermostat design]: https://thermostat-js.herkuapp.com/2
+[Thermostat design]: https://thermostat-js.herokuapp.com/2
 [Thermostat simple]
 [Thermostat design]
 
