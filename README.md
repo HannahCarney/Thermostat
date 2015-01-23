@@ -8,15 +8,15 @@ Screen shots
 -----
 
 <div align="center">
-        <img width="45%" src="public/images/Screenshotcomputer.png" style="float: left;">
-        <img width="20%" src="public/images/screenshotphone.PNG" style="float: right;">
+        <img width="45%" src="public/images/Screenshotcomputer.png" style="text-align: left">
+        <img width="20%" src="public/images/screenshotphone.PNG" style="text-align: right">
 </div>
 
 
 Heroku (live)
 -----
 [Thermostat simple]: https://thermostat-js.herokuapp.com/
-[Thermostat design version]: https://thermostat-js.herkuapp.com/
+[Thermostat design version]: https://thermostat-js.herkuapp.com/2
 
 Objectives of exercise
 ----
