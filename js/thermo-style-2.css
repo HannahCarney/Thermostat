@@ -13,7 +13,6 @@ body {
   height: 100%;
   width: 100%;
   font-family: helvetica-bold;
-  min-width: 10em;
 }
 
 .left-col {
@@ -63,7 +62,7 @@ button {
 
 #PSM-title {
   line-height: 1em;
-  width: 100%;
+  width: 8em
 }
 
 #PSM-buttons p {
@@ -85,29 +84,30 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .left-col {
     width: 100%;
-    padding: .1em;
     text-align: center;
   }
   #temperature {
     font-size: 11em;
-    text-align: center auto;
-    margin-left: .1em;
-    margin-right: auto;
     padding: .1em;
   
   }
   #powerSavingModeSwitch {
     font-size: 1em;
-    margin-left: 1.5em;
+    margin-left: 1em;
+    margin-right:1em;
+    padding: 1em;
     text-align: center;
     width: 100%;
   }
 
   #PSM-buttons {
-    margin-left: 2em;
+    margin-left: 1em;
+    margin-right:1em;
+    padding: 1em;
+    text-align: center;
   }
   .right-col {
     display: none;
@@ -117,12 +117,11 @@ button {
     display: block;
     width: 100%;
     background-color: black;
-    padding: 0.5em;
     color: white;
     margin-top: 1em;
     text-align: center;
     font-size: 2em;
-    line-height: 0.4em;
+    line-height: 1.5em;
   }
 
   .display {
@@ -152,12 +151,18 @@ button {
 
 #PSM-title.low-usage {
   background-color: #27ae60;
+  margin: none;
+  width: 100%;
 }
 
 #PSM-title.medium-usage {
   background-color: #f1c40f;
+  margin: none;
+  width: 100%;
 }
 
 #PSM-title.high-usage {
   background-color: #c0392b;
+  margin: none;
+  width: 100%;
 }
