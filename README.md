@@ -11,7 +11,6 @@ Screen shots
         <img width="45%" src="public/images/Screenshotcomputer.png">
 </div>
 <p></p>
-<p></p>
 
 <div align="center">
         <img width="20%" src="public/images/screenshotphone.PNG">
@@ -22,6 +21,8 @@ Heroku (live)
 -----
 [Thermostat simple]: https://thermostat-js.herokuapp.com/
 [Thermostat design version]: https://thermostat-js.herkuapp.com/2
+[Thermostat simple]
+[Thermostat design version]
 
 Objectives of exercise
 ----
