@@ -6,8 +6,12 @@ The heating at Makers Academy is broken and in rebellion we have programmed a th
 
 Screen shots
 -----
-![](public/images/Screenshotcomputer.png width=30px)
-![](public/images/screenshotphone.PNG width=30px)
+
+<div align="center">
+        <img width="45%" src="public/images/Screenshotcomputer.PNG">
+        <img width="45%" src="public/images/screenshotphone.PNG">
+</div>
+
 
 Heroku (live)
 -----
