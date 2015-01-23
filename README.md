@@ -7,8 +7,10 @@ The heating at Makers Academy is broken and in rebellion we have programmed a th
 Screen shots
 -----
 
-<div align="center">
+<div align="left">
         <img width="45%" src="public/images/Screenshotcomputer.png" style="text-align: left">
+</div>
+<div align="right">
         <img width="20%" src="public/images/screenshotphone.PNG" style="text-align: right">
 </div>
 
