@@ -8,8 +8,8 @@ Screen shots
 -----
 
 <div align="center">
-        <img width="45%" src="public/images/Screenshotcomputer.png" style="text-align: left">
-        <img width="20%" src="public/images/screenshotphone.PNG" style="text-align: right">
+        <img width="45%" src="public/images/Screenshotcomputer.png" style="padding: 3px;>
+        <img width="20%" src="public/images/screenshotphone.PNG">
 </div>
 
 
